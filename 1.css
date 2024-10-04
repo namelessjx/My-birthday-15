@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+/* Circular Progress Bar */
+.circle {
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(green  0%, blue 0%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.inner-circle {
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(to right, yellow, blue); /* Gradient background for inner circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.inner-circle p {
+    font-size: 2em;
+    color: #000;
+    position: absolute; /* Positioning text */
+}
+
+h1, h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#countdown p, #age p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+span {
+    font-size: 1.5em;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+/* Add this CSS for the popup */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: yellow; /* Yellow background */
+    padding: 50px;
+    border-radius: 50px;
+    text-align: center;
+    color: #333;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c; /* Green button */
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}

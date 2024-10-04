@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Birthday Countdown (Inosuke)</h1>
+
+        <!-- Circular Progress Bar -->
+        <div class="circle">
+            <div class="inner-circle">
+                <p id="days-left"></p>
+            </div>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div id="countdown">
+            <p>Days: <span id="days"></span></p>
+            <p>Hours: <span id="hours"></span></p>
+            <p>Minutes: <span id="minutes"></span></p>
+            <p>Seconds: <span id="seconds"></span></p>
+        </div>
+        
+        <!-- Current Age -->
+        <div id="age">
+            <h2>My Current Age</h2>
+            <p id="current-age"></p>
+        </div>
+    </div>
+
+    <!-- Pop-up Messages -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p id="popup-message"></p>
+            <button id="next-button">Next</button>
+        </div>
+    </div>
+
+    <script src="1.js"></script>
+</body>
+</html>
